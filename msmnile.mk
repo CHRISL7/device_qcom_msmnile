@@ -359,6 +359,12 @@ ro.crypto.set_dun = true
 # Enable incremental FS feature
 PRODUCT_PROPERTY_OVERRIDES += ro.incremental.enable=1
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=QTI
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.model=SM8150
+
 ifneq ($(GENERIC_ODM_IMAGE),true)
     ODM_MANIFEST_FILES += device/qcom/msmnile/manifest-qva.xml
 else
